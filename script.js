@@ -113,9 +113,9 @@ function sqrt(){
   data.value = Math.sqrt(data.value);
 }
 
-function cuberoot(){
+function croot(){
   data = document.getElementById("display_val");
-  data.value = Math.cuberoot(data.value);
+  data.value = Math.round(Math.pow(data.value,1/3));
 }
 
 function inverse(){
@@ -129,7 +129,10 @@ function pi(){
   if(data.value.length > 0){
     data.value = Number(data.value)*v;
   }
-  data.value = v;
+  else{
+    data.value = v;
+  }
+  
 }
 
 function calculate(){
