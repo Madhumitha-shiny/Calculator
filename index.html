@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to | Caculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="script.js"></script>
+    </head>
+    <body onload="setData()">
+            <div class="calci">
+                <div class="display">
+                    <input id="display_val" type="text" placeholder="0" style="font-size:x-large;text-align: right"/>
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <button onclick="fact()">X!</button>
+                        <button class="general">(</button>
+                        <button class="general">)</button>
+                        <button class="general">%</button>
+                        <button class="del" onclick="del()">DEL</button>
+                        <button class="ac" onclick="all_clear()">AC</button>
+                    </div>
+                    <div class="row">
+                        <button onclick="sin()">sin</button>
+                        <button onclick="cos()">cos</button>
+                        <button onclick="tan()">tan</button>
+                        <button onclick="sin_in()">sin<sup>-1</sup></button>
+                        <button onclick="cos_in()">cos<sup>-1</sup></button>
+                        <button onclick="tan_in()">tan<sup>-1</sup></button>
+                    </div>
+                    <div class="row">
+                        <button onclick="sinh()">sinh</button>
+                        <button onclick="cosh()">cosh</button>
+                        <button onclick="tanh()">tanh</button>
+                        <button onclick="ceil()">ceil</button>
+                        <button onclick="floor()">floor</button>
+                        <button onclick="round()">round</button>
+                    </div>
+                    <div class="row">
+                        <button class="general">7</button>
+                        <button class="general">8</button>
+                        <button class="general">9</button>
+                        <button onclick="log()">log</button>
+                        <button onclick="ln()">ln</button>
+                        <button onclick="square()">x<sup>2</sup></button>
+                    </div>
+                    <div class="row">
+                        <button class="general">4</button>
+                        <button class="general">5</button>
+                        <button class="general">6</button>
+                        <button onclick="sqrt()">√</button>
+                        <button onclick="cuberoot()"><sup>3</sup>√</button>
+                        <button onclick="inverse()">x<sup>-1</sup></button>
+                    </div>
+                    <div class="row">
+                        <button class="general">3</button>
+                        <button class="general">2</button>
+                        <button class="general">1</button>
+                        <button class="general">+</button>
+                        <button class="general">-</button>
+                        <button class="general">x</button>
+                    </div>
+                    <div class="row">
+                        <button class="general">.</button>
+                        <button class="general">0</button>
+                        <button onclick="pi()">π</button>
+                        <button class="general">/</button>
+                        <button class="general">%</button>
+                        <button class="evaluate" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
